@@ -28,22 +28,25 @@
        
     <div class="main-layout">
         
-        <aside class="sidebar">
-            <h3 class="sidebar-title">Categories</h3>
-            <div class="sidebar-menu">
-                <button class="category-btn active" onclick="filterCategory('all')">All Products</button>
-                <button class="category-btn" onclick="filterCategory('electronics')">Watches</button>
-                <button class="category-btn" onclick="filterCategory('Home Appliances')">Home Appliances</button>
-                <button class="category-btn" onclick="filterCategory('beauty')">Beauty & Health</button>
-                <button class="category-btn" onclick="filterCategory('Furniture')">Furniture</button>
-                <button class="category-btn" onclick="filterCategory('pet')">Pet Supplies</button>
-                <button class="category-btn" onclick="filterCategory('Clothing')">Women's Clothing</button>
-                <button class="category-btn" onclick="filterCategory('lighting')">LED Lights & Lighting</button>
-                <button class="category-btn" onclick="filterCategory('phone')">Phone Accessories</button>
-                <button class="category-btn" onclick="filterCategory('kitchen')">Kitchen & Dining</button>
-                <button class="category-btn" onclick="filterCategory('fitness')">Fitness Products</button>
-                <button class="category-btn" onclick="filterCategory('Kids')">Mother &  Kids</button>
-            </div>
+<aside class="sidebar">
+            <!-- මෙන්න මෙතනට කතා කරන (Toggle) වන විදිහට summary එකක් එකතු කළා -->
+            <details class="category-dropdown" open>
+                <summary class="sidebar-title">ALL Categories</summary>
+                <div class="sidebar-menu">
+                    <button class="category-btn active" onclick="filterCategory('all')">All Products</button>
+                    <button class="category-btn" onclick="filterCategory('electronics')">Watches</button>
+                    <button class="category-btn" onclick="filterCategory('Home Appliances')">Home Appliances</button>
+                    <button class="category-btn" onclick="filterCategory('beauty')">Beauty & Health</button>
+                    <button class="category-btn" onclick="filterCategory('Furniture')">Furniture</button>
+                    <button class="category-btn" onclick="filterCategory('pet')">Pet Supplies</button>
+                    <button class="category-btn" onclick="filterCategory('Clothing')">Women's Clothing</button>
+                    <button class="category-btn" onclick="filterCategory('lighting')">LED Lights & Lighting</button>
+                    <button class="category-btn" onclick="filterCategory('phone')">Phone Accessories</button>
+                    <button class="category-btn" onclick="filterCategory('kitchen')">Kitchen & Dining</button>
+                    <button class="category-btn" onclick="filterCategory('fitness')">Fitness Products</button>
+                    <button class="category-btn" onclick="filterCategory('Kids')">Mother &  Kids</button>
+                </div>
+            </details>
         </aside>
 
         
